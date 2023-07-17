@@ -90,8 +90,8 @@ class _HomePageState extends State<HomePage> {
                 children: [
                   const Icon(Icons.person_pin),
                   _diaplayUserMenu
-                      ? Icon(Icons.arrow_drop_up_outlined)
-                      : Icon(Icons.arrow_drop_down_outlined),
+                      ? const Icon(Icons.arrow_drop_up_outlined)
+                      : const Icon(Icons.arrow_drop_down_outlined),
                 ],
               ),
             ),
