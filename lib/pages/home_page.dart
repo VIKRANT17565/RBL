@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:project_ui/widgets/aptitude_competency_training.dart';
 import 'package:project_ui/widgets/nav_drawer.dart';
 import 'package:project_ui/widgets/user_menu.dart';
 
@@ -33,49 +34,6 @@ class _HomePageState extends State<HomePage> {
         ),
         elevation: 17,
         actions: [
-          // Padding(
-          //   padding: const EdgeInsets.only(left: 16.0),
-          //   child: IconButton(
-          //     onPressed: () {},
-          //     icon: const Icon(Icons.apple),
-          //   ),
-          // ),
-          // Padding(
-          //   padding: const EdgeInsets.only(left: 16.0),
-          //   child: IconButton(
-          //     onPressed: () {},
-          //     icon: const Icon(Icons.android),
-          //   ),
-          // ),
-          // Padding(
-          //   padding: const EdgeInsets.only(left: 16.0),
-          //   child: IconButton(
-          //     onPressed: () {},
-          //     icon: const Icon(Icons.catching_pokemon),
-          //   ),
-          // ),
-          // Padding(
-          //   padding: const EdgeInsets.only(left: 16.0),
-          //   child: IconButton(
-          //     onPressed: () {},
-          //     icon: const Icon(Icons.api),
-          //   ),
-          // ),
-          // Padding(
-          //   padding: const EdgeInsets.only(left: 16.0),
-          //   child: IconButton(
-          //     onPressed: () {},
-          //     icon: const Icon(Icons.home_work),
-          //   ),
-          // ),
-          // Padding(
-          //   padding: const EdgeInsets.only(left: 16.0),
-          //   child: IconButton(
-          //     onPressed: () {},
-          //     icon: const Icon(Icons.language),
-          //   ),
-          // ),
-          // const VerticalDivider(),
           Container(
             width: 70,
             padding: const EdgeInsets.symmetric(horizontal: 0.0),
@@ -105,7 +63,7 @@ class _HomePageState extends State<HomePage> {
             child: Stack(
               children: [
                 const Center(
-                  child: Text('Home Page'),
+                  child: AptitudeCompetencyTraining(),
                 ),
                 Positioned(
                   top: 0,
