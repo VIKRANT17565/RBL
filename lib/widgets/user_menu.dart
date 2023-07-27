@@ -6,8 +6,8 @@ class UserMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 180,
-      width: 320,
+      height: 130,
+      width: 120,
       margin: const EdgeInsets.only(right: 12),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(12),
@@ -22,58 +22,58 @@ class UserMenu extends StatelessWidget {
       ),
       child: Row(
         children: [
-          Expanded(
-            flex: 3,
-            child: Padding(
-              padding: const EdgeInsets.symmetric(vertical: 21, horizontal: 16),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  const Text(
-                    "User Center",
-                    style: TextStyle(
-                      fontWeight: FontWeight.bold,
-                      fontSize: 20,
-                    ),
-                  ),
-                  Expanded(
-                    child: Center(
-                      child: Container(
-                        height: 100,
-                        padding: const EdgeInsets.symmetric(horizontal: 16),
-                        child: const Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text(
-                              "CHANGE USER",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                              ),
-                            ),
-                            Text(
-                              "VIEW MY OPENID",
-                              style: TextStyle(
-                                fontWeight: FontWeight.bold,
-                                fontSize: 15,
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                    ),
-                  ),
-                ],
-              ),
-            ),
-          ),
-          const VerticalDivider(
-            color: Colors.grey,
-            thickness: 1,
-            indent: 21,
-            endIndent: 21,
-          ),
+          // Expanded(
+          //   flex: 3,
+          //   child: Padding(
+          //     padding: const EdgeInsets.symmetric(vertical: 21, horizontal: 16),
+          //     child: Column(
+          //       crossAxisAlignment: CrossAxisAlignment.start,
+          //       children: [
+          //         const Text(
+          //           "User Center",
+          //           style: TextStyle(
+          //             fontWeight: FontWeight.bold,
+          //             fontSize: 20,
+          //           ),
+          //         ),
+          //         Expanded(
+          //           child: Center(
+          //             child: Container(
+          //               height: 100,
+          //               padding: const EdgeInsets.symmetric(horizontal: 16),
+          //               child: const Column(
+          //                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+          //                 crossAxisAlignment: CrossAxisAlignment.start,
+          //                 children: [
+          //                   Text(
+          //                     "CHANGE USER",
+          //                     style: TextStyle(
+          //                       fontWeight: FontWeight.bold,
+          //                       fontSize: 15,
+          //                     ),
+          //                   ),
+          //                   Text(
+          //                     "VIEW MY OPENID",
+          //                     style: TextStyle(
+          //                       fontWeight: FontWeight.bold,
+          //                       fontSize: 15,
+          //                     ),
+          //                   ),
+          //                 ],
+          //               ),
+          //             ),
+          //           ),
+          //         ),
+          //       ],
+          //     ),
+          //   ),
+          // ),
+          // const VerticalDivider(
+          //   color: Colors.grey,
+          //   thickness: 1,
+          //   indent: 21,
+          //   endIndent: 21,
+          // ),
           Expanded(
             flex: 2,
             child: Container(
@@ -82,10 +82,10 @@ class UserMenu extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.center,
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  const Icon(
-                    Icons.security,
-                    size: 80,
-                  ),
+                  // const Icon(
+                  //   Icons.security,
+                  //   size: 80,
+                  // ),
                   const Text(
                     "USERNAME",
                     style: TextStyle(

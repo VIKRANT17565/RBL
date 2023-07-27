@@ -26,56 +26,56 @@ class _HomePageState extends State<HomePage> {
           },
         ),
         title: const Text(
-          'GreaterWMS',
+          'RBL Project',
           style: TextStyle(
             fontWeight: FontWeight.bold,
           ),
         ),
         elevation: 17,
         actions: [
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
-            child: IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.apple),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
-            child: IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.android),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
-            child: IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.catching_pokemon),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
-            child: IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.api),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
-            child: IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.home_work),
-            ),
-          ),
-          Padding(
-            padding: const EdgeInsets.only(left: 16.0),
-            child: IconButton(
-              onPressed: () {},
-              icon: const Icon(Icons.language),
-            ),
-          ),
-          const VerticalDivider(),
+          // Padding(
+          //   padding: const EdgeInsets.only(left: 16.0),
+          //   child: IconButton(
+          //     onPressed: () {},
+          //     icon: const Icon(Icons.apple),
+          //   ),
+          // ),
+          // Padding(
+          //   padding: const EdgeInsets.only(left: 16.0),
+          //   child: IconButton(
+          //     onPressed: () {},
+          //     icon: const Icon(Icons.android),
+          //   ),
+          // ),
+          // Padding(
+          //   padding: const EdgeInsets.only(left: 16.0),
+          //   child: IconButton(
+          //     onPressed: () {},
+          //     icon: const Icon(Icons.catching_pokemon),
+          //   ),
+          // ),
+          // Padding(
+          //   padding: const EdgeInsets.only(left: 16.0),
+          //   child: IconButton(
+          //     onPressed: () {},
+          //     icon: const Icon(Icons.api),
+          //   ),
+          // ),
+          // Padding(
+          //   padding: const EdgeInsets.only(left: 16.0),
+          //   child: IconButton(
+          //     onPressed: () {},
+          //     icon: const Icon(Icons.home_work),
+          //   ),
+          // ),
+          // Padding(
+          //   padding: const EdgeInsets.only(left: 16.0),
+          //   child: IconButton(
+          //     onPressed: () {},
+          //     icon: const Icon(Icons.language),
+          //   ),
+          // ),
+          // const VerticalDivider(),
           Container(
             width: 70,
             padding: const EdgeInsets.symmetric(horizontal: 0.0),
