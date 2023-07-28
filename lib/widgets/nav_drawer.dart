@@ -1,7 +1,11 @@
 import 'package:flutter/material.dart';
 
 class NavDrawer extends StatelessWidget {
-  const NavDrawer({super.key});
+  final Function onNavDrawerTap;
+  const NavDrawer({
+    super.key,
+    required this.onNavDrawerTap,
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -15,37 +19,46 @@ class NavDrawer extends StatelessWidget {
             hoverColor: Colors.grey[300],
             leading: const Icon(Icons.outbound_outlined),
             title: const Text('ACT'),
-            onTap: () {},
+            onTap: () {
+              onNavDrawerTap(0);
+            },
           ),
           ListTile(
             contentPadding:
                 const EdgeInsets.symmetric(vertical: 7, horizontal: 16),
             leading: const Icon(Icons.outbound_outlined),
             title: const Text('SDP'),
-            onTap: () {},
+            onTap: () {
+              onNavDrawerTap(1);
+            },
           ),
           ListTile(
             contentPadding:
                 const EdgeInsets.symmetric(vertical: 7, horizontal: 16),
             leading: const Icon(Icons.outbound_outlined),
             title: const Text('CDT'),
-            onTap: () {},
+            onTap: () {
+              onNavDrawerTap(2);
+            },
           ),
           ListTile(
             contentPadding:
                 const EdgeInsets.symmetric(vertical: 7, horizontal: 16),
             leading: const Icon(Icons.outbound_outlined),
             title: const Text('CCP'),
-            onTap: () {},
+            onTap: () {
+              onNavDrawerTap(3);
+            },
           ),
           ListTile(
             contentPadding:
                 const EdgeInsets.symmetric(vertical: 7, horizontal: 16),
             leading: const Icon(Icons.outbound_outlined),
             title: const Text('IOW'),
-            onTap: () {},
+            onTap: () {
+              onNavDrawerTap(4);
+            },
           ),
-          
         ],
       ),
     );

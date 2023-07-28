@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class AptitudeCompetencyTraining extends StatefulWidget {
-  const AptitudeCompetencyTraining({super.key});
+class CampusConnectProgramme extends StatefulWidget {
+  const CampusConnectProgramme({super.key});
 
   @override
-  State<AptitudeCompetencyTraining> createState() =>
-      _AptitudeCompetencyTrainingState();
+  State<CampusConnectProgramme> createState() =>
+      _CampusConnectProgrammeState();
 }
 
-class _AptitudeCompetencyTrainingState
-    extends State<AptitudeCompetencyTraining> {
+class _CampusConnectProgrammeState
+    extends State<CampusConnectProgramme> {
   int _current = 0;
   final List<String> _tabs = [
     'Attendance',
@@ -99,10 +99,10 @@ class _AptitudeCompetencyTrainingState
         ),
         Container(
           height: 50,
-          color: const Color.fromARGB(255, 175, 255, 171),
+          color: const Color.fromARGB(255, 185, 227, 255),
           child: const Center(
             child: Text(
-              'ACT',
+              'CCP',
               style: TextStyle(
                 fontSize: 20,
               ),

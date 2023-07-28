@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:project_ui/widgets/aptitude_competency_training.dart';
+import 'package:project_ui/widgets/campus_connect_programme.dart';
+import 'package:project_ui/widgets/career_development_training.dart';
+import 'package:project_ui/widgets/industry_oriented_workshop.dart';
 import 'package:project_ui/widgets/nav_drawer.dart';
+import 'package:project_ui/widgets/student_development_program.dart';
 import 'package:project_ui/widgets/user_menu.dart';
 
 class HomePage extends StatefulWidget {
@@ -13,6 +17,21 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   bool _diaplayNavDrawer = true;
   bool _diaplayUserMenu = false;
+  int _selectedDrawerIndex = -1;
+
+  void selectDrawerItem(int index) {
+    setState(() {
+      _selectedDrawerIndex = index;
+    });
+  }
+
+  final List<Widget> _drawerItemsWidgets = const [
+    AptitudeCompetencyTraining(),
+    StudentDevelopmentProgram(),
+    CareerDevelopmentTraining(),
+    CampusConnectProgramme(),
+    IndustryOrientedWorkshop(),
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -58,12 +77,18 @@ class _HomePageState extends State<HomePage> {
       ),
       body: Row(
         children: [
-          _diaplayNavDrawer ? const NavDrawer() : Container(),
+          _diaplayNavDrawer
+              ? NavDrawer(
+                  onNavDrawerTap: selectDrawerItem,
+                )
+              : Container(),
           Expanded(
             child: Stack(
               children: [
-                const Center(
-                  child: AptitudeCompetencyTraining(),
+                Center(
+                  child: _selectedDrawerIndex != -1
+                      ? _drawerItemsWidgets[_selectedDrawerIndex]
+                      : Text('Select a menu item'),
                 ),
                 Positioned(
                   top: 0,
